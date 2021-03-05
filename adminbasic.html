@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="//cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script> 
+  <!-- <script src="//cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script> -->
+  <title>admin</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<style>
+img{
+  height:55px;
+  /*width:90px;*/
+  right:0;
+}
+
+.jumbotron { 
+  padding: 15px 0px 15px 0px;
+  margin: 3% 0% 1% 2%;
+    color:black;
+}
+body {
+    background-color:white;
+    color: black;
+}
+.navbar-default {
+    background-color: #1b7909;
+    border-color: #16b130;
+}
+.nav.navbar-nav li a {
+   color: #fff;
+ }
+ #qt{
+  background:#b6b0b0;
+  margin:5px 30px;
+  padding:1px 10px;
+ }
+input[type="radio"]{padding:10px 10px;}
+#subjective{display:none;}
+#objective{display:block;}
+#multiple{display:none;}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav.navbar-nav li .dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.hidden {
+  display: none;
+}
+.navitem1 {
+  display: inline-block;
+  width: 70px; 
+  height: 30px; 
+  text-align: center;
+  border: gray;
+  background-color: #3d71b6;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+}
+.navitem2 {
+  display: inline-block;
+  width: 70px; 
+  height: 30px; 
+  text-align: center;
+  border: gray;
+  background-color: #f84747;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.navitem3 {
+  display: inline-block;
+  width: 70px; 
+  height: 30px; 
+  text-align: center;
+  border: gray;
+  background-color: hsl(123, 41%, 53%);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.navitem4 {
+  display: inline-block;
+  width: 70px; 
+  height: 30px; 
+  text-align: center;
+  border: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+</style>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	 <li class="list"><a href="students.php">STUDENTS</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">EXAMS</a>
+    <div class="dropdown-content">
+      <a href="addexam.php">Add Exam</a>
+      <a href="manageexam.php">Manage Exam</a>
+      <a href="pricemanage.php">Manage Price</a>
+    </div>
+  </li>
+  <li class="list"><a href="add_uin.php">UIN</a></li>
+  <li class="list"><a href="payments.php">PAYMENTS</a></li>
+  <li class="list"><a href="upcomings.php">UPCOMING</a></li>
+  <li class="list"><a href="series.php">TEST SERIES</a></li>
+    <li class="list"><a href="topic.php">TOPICWISE</a></li>
+    <li class="list"><a href="topic_answers.php">ANSWER SHEETS</a></li>
+  <li class="list"><a href="QB.php">QUESTION BANKS</a></li>
+<li class="list"><a href="result.php">RESULTS</a></li>
+<li class="list"><a href="reviews.php">REVIEWS</a></li>
+        
+  
+  
+
+</ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="logout.php?submit1=logout"><span class="glyphicon glyphicon-log-out" style="font-size:30px;"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
